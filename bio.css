@@ -1,26 +1,32 @@
 .container {
   background-color: white;
   border: 5px dotted black;
-  width: 60%;
+  width: 80%;
   margin: 0 auto 15%;
   padding: 1%;
 }
 
 .bioPicture {
-  /* width: 80%; */
+  width: 80%;
+  max-width: 183px;
   /* border: 1px solid black; */
   margin: 10px auto;
   display: block;
   box-shadow: 0 0 10px 10px lightgray;
 }
 
+.bioPicture > img {
+  width: 100%;
+}
+
 .bioText {
-  line-height: 1.6rem;
+  line-height: 1.7rem;
   font-size: 1.3rem;
 }
 
 .bioText > p:first-child {
   font-size: 1.8rem;
+  line-height: 2.5rem;
 }
 
 .bioText > p:nth-child(2) {
@@ -32,6 +38,9 @@ body {
 }
 
 @media screen and (min-width: 1000px) {
+  .container {
+    width: 60%;
+  }
   .bioPicture {
     float: left;
     max-width: 50%;

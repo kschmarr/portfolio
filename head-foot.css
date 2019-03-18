@@ -106,7 +106,6 @@ top: 10px;
 
 .nav > a {
   margin: 0;
-  padding-right: 10px;
 }
 
 .navItem {
@@ -115,6 +114,7 @@ top: 10px;
   text-align: right;
   color: black;
   background-color: white;
+  padding-right: 10px;
 }
 
 .navItem:hover {

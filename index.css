@@ -1,6 +1,6 @@
 p {
   text-align: center;
-  padding: 0 20%;
+  padding: 0 5%;
 }
 
 .hero {
@@ -25,11 +25,19 @@ p {
   background-color: white;
   /* min-height: 30rem; */
   height: fit-content;
-  padding: 20px 0;
+  padding-bottom: 20px;
 }
 
 @media screen and (min-width: 1000px) {
   .hero > p {
     font-size: 10rem;
+  }
+
+  p {
+  padding: 0 20%;
+  }
+
+  .headline {
+  padding: 20px 0;
   }
 }
