@@ -1,0 +1,50 @@
+h2 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+a {
+  text-align: center;
+  display: block;
+  margin: 10px auto;
+}
+
+.hero > img {
+  width: 90%;
+  max-width: 515px;
+  height: auto;
+  border: 1px solid black;
+  display: block;
+  margin: auto;
+  background-color: white;
+  box-shadow: 0 0 10px 10px white;
+}
+
+.desc, .tech, .links {
+  padding: 10px;
+}
+
+.desc {
+  background-color: white;
+}
+
+.links {
+  background-color: white;
+}
+
+main {
+  padding-bottom: 15%;
+}
+
+@media screen and (min-width: 1000px) {
+  .hero > img {
+    width: 50%;
+  }
+}

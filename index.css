@@ -1,0 +1,35 @@
+p {
+  text-align: center;
+  padding: 0 20%;
+}
+
+.hero {
+  
+  background-color: lightgray;
+}
+
+.hero > img {
+  margin: 0 auto 10px;
+  display: block;
+  box-shadow: 0 0 10px 10px white;
+}
+
+.hero > p {
+  font-size: 5rem;
+  margin: 0;
+}
+
+.headline {
+  /* height: 10rem; */
+  font-size: 2rem;
+  background-color: white;
+  /* min-height: 30rem; */
+  height: fit-content;
+  padding: 20px 0;
+}
+
+@media screen and (min-width: 1000px) {
+  .hero > p {
+    font-size: 10rem;
+  }
+}

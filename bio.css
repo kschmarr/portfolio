@@ -1,0 +1,46 @@
+.container {
+  background-color: white;
+  border: 5px dotted black;
+  width: 60%;
+  margin: 0 auto 15%;
+  padding: 1%;
+}
+
+.bioPicture {
+  /* width: 80%; */
+  /* border: 1px solid black; */
+  margin: 10px auto;
+  display: block;
+  box-shadow: 0 0 10px 10px lightgray;
+}
+
+.bioText > p:first-child {
+  font-size: 1.8rem;
+}
+
+.bioText > p:nth-child(2) {
+  font-size: 1.6rem;
+}
+
+body {
+  /* text-indent: 100px; */
+  text-align: center;
+}
+
+@media screen and (min-width: 1000px) {
+  .bioPicture {
+    float: left;
+    max-width: 50%;
+    width: fit-content;
+    /* border: 1px solid black; */
+    margin: 20px;
+  }
+
+  .bioText > p:first-child {
+    font-size: 3rem;
+  }
+
+  .bioText > p:nth-child(2) {
+    font-size: 2rem;
+  }
+}
