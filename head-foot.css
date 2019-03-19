@@ -20,7 +20,7 @@ main {
 
 a {
   text-align: center;
-  display: block;
+  /* display: block; */
   margin: 10px auto;
   text-decoration: none;
 }

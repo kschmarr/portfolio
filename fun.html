@@ -17,29 +17,55 @@
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-full.min.js"></script>
   <script type="text/paperscript" canvas="myCanvas">
-  
-    var circles = [];
-  
-    function onKeyDown(event) {
-      var maxPoint = new Point(view.size.width, view.size.height);
-      var randPoint = Point.random();
-      var point = maxPoint * randPoint;
-      var newCircle = new Path.Circle(point, (Math.random()*50));
-      newCircle.fillColor = "orange";
-      circles.push(newCircle);      
+  var circles = [];
+
+  function onKeyDown(event) {
+    var maxPoint = new Point(view.size.width, view.size.height);
+    var randPoint = Point.random();
+    var point = maxPoint * randPoint;
+    var newCircle = new Path.Circle(point, ((Math.random()+.2)*40));
+    newCircle.fillColor = "orange";
+    circles.push(newCircle);      
+  }
+
+  var animatedCircle = new Path.Circle(new Point(300,300), 50)
+  animatedCircle.fillColor = "red";
+
+  function onFrame(event){
+    for(var i = 0; i < circles.length; i++) {
+      circles[i].fillColor.hue += 1;
+      <!-- circles[i].scale(.99); -->
     }
-  
-    var animatedCircle = new Path.Circle(new Point(300,300), 50)
-    animatedCircle.fillColor = "red";
-  
-    function onFrame(event){
-      for(var i = 0; i < circles.length; i++) {
-        circles[i].fillColor.hue += 1;
-        <!-- circles[i].scale(.99); -->
+    animatedCircle.fillColor.hue += 1;
+
+    function startup() {
+      var el = document.getElementsByTagName("canvas")[0];
+      el.addEventListener("touchstart", handleStart, false);
+      el.addEventListener("touchend", handleEnd, false);
+      el.addEventListener("touchcancel", handleCancel, false);
+      el.addEventListener("touchmove", handleMove, false);
+      console.log("initialized.");
+    }
+
+    function handleStart(evt) {
+      evt.preventDefault();
+      console.log("touchstart.");
+      var el = document.getElementsByTagName("canvas")[0];
+      var ctx = el.getContext("2d");
+      var touches = evt.changedTouches;
+            
+      for (var i = 0; i < touches.length; i++) {
+        console.log("touchstart:" + i + "...");
+        ongoingTouches.push(copyTouch(touches[i]));
+        var color = colorForTouch(touches[i]);
+        ctx.beginPath();
+        ctx.arc(touches[i].pageX, touches[i].pageY, 4, 0, 2 * Math.PI, false);  // a circle at the start
+        ctx.fillStyle = color;
+        ctx.fill();
+        console.log("touchstart:" + i + ".");
       }
-      animatedCircle.fillColor.hue += 1;
-      <!-- animatedCircle.scale(.9); -->
     }
+  }
   </script>
 </head>
 

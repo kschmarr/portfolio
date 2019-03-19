@@ -8,6 +8,12 @@
   font-family: 'Domine', serif;
 }
 
+#nav_btn {
+  color: white;
+  background-color: lightgray;
+  margin-right: 10px;
+}
+
 canvas {
   width: 100%;
   background: black;
