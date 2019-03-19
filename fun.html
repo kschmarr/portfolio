@@ -10,9 +10,35 @@
   <link rel="stylesheet" type="text/css" media="screen" href="fun.css">
   <link rel="stylesheet" type="text/css" media="screen" href="head-foot.css">
   <link rel="html" type="html" href="bio.html">
+  <link href="https://fonts.googleapis.com/css?family=Domine|Montserrat" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script src="fun.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-full.min.js"></script>
+  <script type="text/paperscript" canvas="myCanvas">
+  
+    var circles = [];
+  
+    function onKeyDown(event) {
+      var maxPoint = new Point(view.size.width, view.size.height);
+      var randPoint = Point.random();
+      var point = maxPoint * randPoint;
+      var newCircle = new Path.Circle(point, (Math.random()*50));
+      newCircle.fillColor = "orange";
+      circles.push(newCircle);
+      
+    }
+  
+    var animatedCircle = new Path.Circle(new Point(300,300), 100)
+    animatedCircle.fillColor = "red";
+  
+    function onFrame(event){
+      for(var i = 0; i < circles.length; i++) {
+        circles[i].fillColor.hue += 1;
+      }
+      animatedCircle.fillColor.hue += 1;
+      animatedCircle.scale(.9);
+    }
+  </script>
 </head>
 
 <body>
@@ -37,14 +63,19 @@
     </div>
   </header>
   <div class="container">
-    <p>COMING<br>SOON!</p>
+    <canvas id="myCanvas" resize></canvas>
+  </div>
+  <div>
+    <h1>Press a key to create a magic circle</h1>
+    <a href="fun.html"><button>New Canvas</button></a>
+    <p><span class="warn">Warning:</span> Do not use if you are sensitive to flashing lights</p>
   </div>
   <footer>
     <p>Copyright Kris</p>
-    <a href="mailto:kschmarr@gmail.com?Subject=From%portfolio" target="_top">Work or Press query? Email me!</a>
+    <a href="mailto:kschmarr@gmail.com?Subject=From%portfolio" target="_top">Work or Press query? Click here to email me.</a>
   </footer>
 
-  <script src="main.js"></script>
+  <script src="fun.js"></script>
   <script src="head-foot.js"></script>
 </body>
 

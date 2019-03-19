@@ -4,7 +4,7 @@ p {
 }
 
 .hero {
-  
+  font-family: 'Montserrat', sans-serif;
   background-color: lightgray;
 }
 
@@ -20,12 +20,11 @@ p {
 }
 
 .headline {
-  /* height: 10rem; */
   font-size: 2rem;
   background-color: white;
-  /* min-height: 30rem; */
   height: fit-content;
   padding-bottom: 20px;
+  font-family: 'Domine', serif;
 }
 
 @media screen and (min-width: 1000px) {

@@ -5,4 +5,46 @@
   position: relative;
   margin: 0;
   z-index: -1;
+  font-family: 'Domine', serif;
+}
+
+canvas {
+  width: 100%;
+  background: black;
+}
+
+html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Domine', serif;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+button {
+  height: 50px;
+  width: 200px;
+  font-size: 1.5rem;
+}
+
+a {
+  width: fit-content;
+}
+
+button:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 2px gray;
+}
+
+p {
+   font-size: 1.2rem;
+}
+
+.warn {
+  color: red;
+  text-shadow: 1px 1px 1px black;
+  font-size: 1.25rem;
 }
