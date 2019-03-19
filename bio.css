@@ -23,20 +23,19 @@
   line-height: 1.7rem;
   font-size: 1.3rem;
   font-family: 'Domine', serif;
+  text-align: left;
 }
 
 .bioText > p:first-child {
   font-size: 1.8rem;
   line-height: 2.5rem;
   font-family: 'Montserrat', sans-serif;
+  text-align: center;
 }
 
 .bioText > p:nth-child(2) {
   font-size: 1.6rem;
   font-family: 'Montserrat', sans-serif;
-}
-
-body {
   text-align: center;
 }
 
@@ -48,7 +47,7 @@ body {
     float: left;
     max-width: 50%;
     width: fit-content;
-    margin: 20px;
+    margin: 20px 20px 5px 20px;
   }
 
   .bioText > p:first-child {

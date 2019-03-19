@@ -1,6 +1,5 @@
-p {
+.headline > p {
   text-align: center;
-  padding: 0 5%;
 }
 
 .hero {
@@ -17,6 +16,7 @@ p {
 .hero > p {
   font-size: 5rem;
   margin: 0;
+  text-align: center;
 }
 
 .headline {
@@ -30,9 +30,10 @@ p {
 @media screen and (min-width: 1000px) {
   .hero > p {
     font-size: 10rem;
+    padding: 0 20%;
   }
 
-  p {
+  .headline > p {
   padding: 0 20%;
   }
 

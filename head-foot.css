@@ -32,15 +32,24 @@ footer {
   bottom: 0;
   width: 100%;
   font-family: 'Domine', serif;
+  display: flex;
+  flex-direction: row;
+  padding: 0 10px;
 }
 
 footer > p {
   text-align: center;
-  margin: 1px;
+  margin-top: 25px;
 }
 footer > a {
   text-align: center;
   color: white;
+  width: fit-content;
+}
+
+i {
+  /* size: 20rem; */
+  display: inline;
 }
 
 footer > a:hover {
