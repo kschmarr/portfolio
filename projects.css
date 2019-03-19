@@ -47,7 +47,6 @@ a {
 }
 
 main {
-  padding-bottom: 15%;
   line-height: 1.6rem;
   font-family: 'Domine', serif;
 }
@@ -55,5 +54,11 @@ main {
 @media screen and (min-width: 1000px) {
   .hero > img {
     width: 50%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  main {
+    padding-bottom: 15%;
   }
 }

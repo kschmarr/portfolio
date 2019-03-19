@@ -37,40 +37,12 @@
       <!-- circles[i].scale(.99); -->
     }
     animatedCircle.fillColor.hue += 1;
-
-    function startup() {
-      var el = document.getElementsByTagName("canvas")[0];
-      el.addEventListener("touchstart", handleStart, false);
-      el.addEventListener("touchend", handleEnd, false);
-      el.addEventListener("touchcancel", handleCancel, false);
-      el.addEventListener("touchmove", handleMove, false);
-      console.log("initialized.");
-    }
-
-    function handleStart(evt) {
-      evt.preventDefault();
-      console.log("touchstart.");
-      var el = document.getElementsByTagName("canvas")[0];
-      var ctx = el.getContext("2d");
-      var touches = evt.changedTouches;
-            
-      for (var i = 0; i < touches.length; i++) {
-        console.log("touchstart:" + i + "...");
-        ongoingTouches.push(copyTouch(touches[i]));
-        var color = colorForTouch(touches[i]);
-        ctx.beginPath();
-        ctx.arc(touches[i].pageX, touches[i].pageY, 4, 0, 2 * Math.PI, false);  // a circle at the start
-        ctx.fillStyle = color;
-        ctx.fill();
-        console.log("touchstart:" + i + ".");
-      }
-    }
   }
   </script>
 </head>
 
 <body>
-  <header role="navigation">
+  <nav role="navigation">
     <a id="nav_btn"><span>Toggle Menu</span></a>
     <!-- <nav id="nav" class="toggle">
       Navigation UL Here
@@ -89,14 +61,16 @@
         <div class="navItem funLink">FUN</div>
       </a>
     </div>
-  </header>
+  </nav>
   <div class="container">
     <canvas id="myCanvas" resize></canvas>
   </div>
   <div>
-    <h1>Press a key to create a magic circle</h1>
+    <h1>Press any key to create a magic circle</h1>
+    <h1>Press 100s of keys for a <a href="https://www.antlife.space/" target="_blank">"color massage"</a></h1>
     <a href="fun.html"><button>Blank Canvas</button></a>
-    <input type="text">
+    <label for="text_input">For mobile use: Insert cursor here and press enter (repeatedly)</label>
+    <input id="text_input" type="text" placeholder="Insert cursor here" maxlength="10">
     <p><span class="warn">Warning:</span> Do not use if you are sensitive to flashing lights</p>
   </div>
   <footer role="contentinfo">
