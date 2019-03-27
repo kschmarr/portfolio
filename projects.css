@@ -29,7 +29,7 @@ a {
   height: auto;
   border: 1px solid black;
   display: block;
-  margin: 0 auto 2%;
+  margin: 25px auto 2%;
   background-color: white;
   box-shadow: 0 0 10px 10px white;
 }
@@ -44,11 +44,13 @@ a {
 
 .links {
   background-color: white;
+  border-bottom: 3px dashed black;
 }
 
 main {
   line-height: 1.6rem;
   font-family: 'Domine', serif;
+  padding-top: 130px;
 }
 
 @media screen and (min-width: 1000px) {
