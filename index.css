@@ -5,12 +5,14 @@
 .hero {
   font-family: 'Montserrat', sans-serif;
   background-color: lightgray;
+  padding-top: 150px;
 }
 
 .hero > img {
   margin: 0 auto 10px;
   display: block;
   box-shadow: 0 0 10px 10px white;
+  
 }
 
 .hero > p {

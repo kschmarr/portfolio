@@ -6,6 +6,10 @@
   padding: 1%;
 }
 
+main {
+  padding-top: 150px;
+}
+
 .bioPicture {
   width: 80%;
   max-width: 183px;

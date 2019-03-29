@@ -14,10 +14,6 @@ body {
  background-color: lightgray;
 }
 
-main {
-  /* padding-top: 17%; */
-}
-
 a {
   text-align: center;
   margin: 10px auto;
@@ -110,6 +106,7 @@ top: 10px;
 
 .nav {
     font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0px;
   }
 
 .nav > a {
