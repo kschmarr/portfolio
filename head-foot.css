@@ -116,7 +116,7 @@ top: 10px;
 .navItem {
   border: 1px solid black;
   font-size: 3rem;
-  text-align: right;
+  text-align: left;
   color: black;
   background-color: white;
   padding-right: 10px;
