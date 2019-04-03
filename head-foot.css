@@ -54,10 +54,10 @@ footer > a:hover {
 
 #nav_btn{ 
   position: absolute;
-  right: 0;
+  right: 10px;
   display: block; 
   float: right; 
-  padding: 20px; 
+  padding: 10px; 
   cursor: pointer; 
 }
 

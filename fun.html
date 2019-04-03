@@ -28,6 +28,15 @@
     circles.push(newCircle);      
   }
 
+  function onMouseDown(event) {
+    var maxPoint = new Point(view.size.width, view.size.height);
+    var randPoint = Point.random();
+    var point = maxPoint * randPoint;
+    var newCircle = new Path.Circle(point, ((Math.random()+.2)*40));
+    newCircle.fillColor = "orange";
+    circles.push(newCircle);    
+  }
+
   var animatedCircle = new Path.Circle(new Point(300,300), 50)
   animatedCircle.fillColor = "red";
 
@@ -44,9 +53,7 @@
 <body>
   <nav role="navigation">
     <a id="nav_btn"><span>Toggle Menu</span></a>
-    <!-- <nav id="nav" class="toggle">
-      Navigation UL Here
-    </nav> -->
+    
     <div id="nav" class="nav toggle">
       <a href="index.html">
         <div class="navItem logoLink">K</div>
@@ -67,10 +74,11 @@
   </div>
   <div class="instructions">
     <h1>Press any key to create a magic circle</h1>
-    <h1>Press 100s of keys for a <a href="https://www.antlife.space/" target="_blank">"color massage"</a></h1>
+    <h2>On enabled devices tap the screen</h2>
+    <h2>Press 100s of keys for a <a href="https://www.antlife.space/" target="_blank" class="color-massage">"color massage"</a></h2>
     <a href="fun.html"><button>Blank Canvas</button></a>
-    <label for="text_input">For mobile use: Insert cursor here and press enter (repeatedly)</label>
-    <input id="text_input" type="text" placeholder="Insert cursor here" maxlength="10">
+    <!-- <label for="text_input">For mobile use: Insert cursor here and press enter (repeatedly)</label>
+    <input id="text_input" type="text" placeholder="Insert cursor here" maxlength="10"> -->
     <p class="warning"><span class="warn">Warning:</span> Do not use if you are sensitive to flashing lights</p>
   </div>
   <footer role="contentinfo">

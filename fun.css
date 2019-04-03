@@ -1,7 +1,5 @@
 #nav_btn {
-  color: white;
   background-color: lightgray;
-  margin-right: 10px;
 }
 
 canvas {
@@ -11,7 +9,6 @@ canvas {
 }
 
 html {
-  /* height: 100%; */
   margin: 0;
   font-family: 'Domine', serif;
   text-align: center;
@@ -22,9 +19,9 @@ h1 {
 }
 
 button {
-  height: auto;
-  width: 200px;
+  width: 50%;
   font-size: 1.5rem;
+  box-shadow: 1px 1px 1px gray;
 }
 
 a {
@@ -61,8 +58,8 @@ input {
   height: 2rem;
 }
 
-h1 > a {
-  font-size: 32px;
+.color-massage {
+  font-size: 24px;
   background: linear-gradient(to right, rgb(255, 145, 42) 0%, #086762 100%);
   -webkit-text-fill-color: white;
 }
