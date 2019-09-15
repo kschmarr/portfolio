@@ -1,47 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Kris Schmarr Portfolio</title>
-  <meta name="description" content="Introducing the work of Kris Schmarr, Full Stack Developer extraordinaire">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="index.css">
-  <link rel="stylesheet" type="text/css" media="screen" href="head-foot.css">
-  <link href="https://fonts.googleapis.com/css?family=Domine|Montserrat" rel="stylesheet">  
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-</head>
-<body>
-  <nav role="navigation">
-    <a id="nav_btn"><span>Toggle Menu</span></a>
-    <div class="nav toggle" id="nav">
-      <a href="index.html"><div class="navItem logoLink">K</div></a>
-      <a href="bio.html"><div class="navItem bioLink">BIO</div></a>
-      <a href="projects.html"><div class="navItem projectsLink">PROJECTS</div></a>
-      <a href="fun.html"><div class="navItem funLink">FUN</div></a>
-    </div>
-  </nav>
-  <main role="main">
-    <div class="hero">
-      <img src="stand_with_pad.jpg" alt="picture of me standing with arms crossed and climbing crashpad on my back">
-      <p>KRIS</p>
-    </div>
-    <div class="headline">
-      <p>Kris is the name, and Full Stack is the game. I come from a mechanical engineering background and love the problem solving aspect of programming.</p>
-    </div>
-  </main>
-  <footer role="contentinfo">
-    <p>Copyright Kris 2019</p>
-    <a href="mailto:kschmarr@gmail.com?Subject=From%portfolio" target="_top"><i class="fas fa-envelope-square fa-3x"></i></a>
-    <a href="https://www.linkedin.com/in/kristoffer-schmarr-1b312449/"><i class="fab fa-linkedin fa-3x"></i></a>
-    <a href="https://github.com/kschmarr"><i class="fab fa-github-square fa-3x"></i></a>
-
-  </footer>
-  <script src="index.js"></script>
-  <script src="head-foot.js"></script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Kris Schmarr Portfolio</title>
+    <meta
+      name="description"
+      content="Introducing the work of Kris Schmarr, Full Stack Developer extraordinaire"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./styles/index.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./styles/head-foot.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Domine|Montserrat"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" href="./images/favicon.ico" />
+  </head>
+  <body>
+    <nav role="navigation">
+      <a id="nav_btn"><span>Toggle Menu</span></a>
+      <div class="nav toggle" id="nav">
+        <a href="index.html">
+          <div class="navItem logoLink">
+            <img src="./images/home-icon.png" alt="home icon" />
+          </div>
+        </a>
+        <a href="./pages/bio.html"><div class="navItem bioLink">BIO</div></a>
+        <a href="./pages/projects.html"
+          ><div class="navItem projectsLink">PROJECTS</div></a
+        >
+        <a href="./pages/fun.html"><div class="navItem funLink">FUN</div></a>
+      </div>
+    </nav>
+    <main role="main">
+      <div class="hero">
+        <img
+          src="./images/stand_with_pad.jpg"
+          alt="b&w photo, standing with arms crossed and climbing crashpad on back"
+        />
+        <p>KRISTOFFER SCHMARR</p>
+      </div>
+      <div class="headline">
+        <p>
+          I come from a mechanical engineering background and love the problem
+          solving aspect and creation speed of programming.
+        </p>
+      </div>
+    </main>
+    <footer role="contentinfo">
+      <p>Copyright 2019</p>
+      <a href="mailto:kschmarr@gmail.com?Subject=From%portfolio" target="_top"
+        ><i class="fas fa-envelope-square fa-3x"></i
+      ></a>
+      <a href="https://www.linkedin.com/in/kristoffer-schmarr-1b312449/"
+        ><i class="fab fa-linkedin fa-3x"></i
+      ></a>
+      <a href="https://github.com/kschmarr"
+        ><i class="fab fa-github-square fa-3x"></i
+      ></a>
+    </footer>
+    <script src="./scripts/index.js"></script>
+    <script src="./scripts/head-foot.js"></script>
+  </body>
 </html>

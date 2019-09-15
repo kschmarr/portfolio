@@ -10,12 +10,12 @@ canvas {
 
 html {
   margin: 0;
-  font-family: 'Domine', serif;
+  font-family: "Domine", serif;
   text-align: center;
 }
 
 h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 button {
@@ -34,7 +34,7 @@ button:hover {
 }
 
 p {
-   font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 .warn {
@@ -60,8 +60,8 @@ input {
 
 .color-massage {
   font-size: 24px;
-  background: linear-gradient(to right, rgb(255, 145, 42) 0%, #086762 100%);
-  -webkit-text-fill-color: white;
+  background: linear-gradient(to right, rgb(227, 255, 42) 0%, #47fffc 100%);
+  -webkit-text-fill-color: black;
 }
 
 @media screen and (min-width: 1000px) {

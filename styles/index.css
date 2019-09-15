@@ -1,24 +1,26 @@
 .headline > p {
   text-align: center;
+  padding: 0 5%;
 }
 
 .hero {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: lightgray;
-  padding-top: 200px;
+  padding-top: 20px;
 }
 
 .hero > img {
   margin: 0 auto 10px;
   display: block;
   box-shadow: 0 0 10px 10px white;
-  
+  width: 300px;
 }
 
 .hero > p {
-  font-size: 5rem;
-  margin: 0;
+  font-size: 2rem;
+  margin: 0 auto;
   text-align: center;
+  max-width: 90%;
 }
 
 .headline {
@@ -26,20 +28,22 @@
   background-color: white;
   height: fit-content;
   padding-bottom: 20px;
-  font-family: 'Domine', serif;
+  font-family: "Domine", serif;
 }
 
 @media screen and (min-width: 1000px) {
+  .hero {
+    padding-top: 170px;
+  }
   .hero > p {
-    font-size: 10rem;
-    padding: 0 20%;
+    font-size: 5rem;
   }
 
   .headline > p {
-  padding: 0 20%;
+    padding: 0 20%;
   }
 
   .headline {
-  padding: 20px 0;
+    padding: 20px 0;
   }
 }
