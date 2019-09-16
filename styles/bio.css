@@ -1,17 +1,14 @@
 .container {
-  /* background-color: white; */
-  /* border: 5px dotted black; */
   width: 80%;
-  height: 100vh;
   margin: 0 auto;
-  padding: 1%;
+  padding: 1% 1% 50px;
   background-image: linear-gradient(
     rgba(255, 255, 255, 0.7),
     rgba(255, 255, 255, 0.7)
   );
 }
 
-main {
+body {
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6G8vXV3Y7wWOS_uu6IZaF49xAS2O4Bk-C5hRlh0Ge89GfXpgWHg");
   background-position: center;
   background-repeat: no-repeat;
@@ -21,14 +18,9 @@ main {
 .bioPicture {
   width: 80%;
   max-width: 183px;
-  /* border: 1px solid black; */
   margin: 10px auto;
   display: block;
   box-shadow: 0 0 10px 10px lightgray;
-}
-
-.bioPicture > img {
-  width: 100%;
 }
 
 .bioText {

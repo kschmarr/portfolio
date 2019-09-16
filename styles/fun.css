@@ -61,7 +61,7 @@ input {
 .color-massage {
   font-size: 24px;
   background: linear-gradient(to right, rgb(227, 255, 42) 0%, #47fffc 100%);
-  -webkit-text-fill-color: black;
+  color: black;
 }
 
 @media screen and (min-width: 1000px) {

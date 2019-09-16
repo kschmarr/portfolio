@@ -1,10 +1,13 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
 .headline > p {
   text-align: center;
   padding: 0 5%;
 }
 
 .hero {
-  font-family: "Montserrat", sans-serif;
   background-color: lightgray;
   padding-top: 20px;
 }

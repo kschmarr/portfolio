@@ -1,16 +1,20 @@
-h1 {
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
-}
-
 h2 {
   text-align: center;
-  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  line-height: 1.2em;
+}
+
+h3 {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 1.5em;
 }
 
 p {
   text-align: center;
   font-size: 1.1rem;
+  width: 90%;
+  margin: 0 auto;
 }
 
 a {
@@ -53,7 +57,7 @@ main {
   line-height: 1.6rem;
   font-family: "Domine", serif;
   padding-top: 20px;
-  padding-bottom: 15%;
+  padding-bottom: 70px;
 }
 
 @media screen and (min-width: 1000px) {
@@ -62,5 +66,21 @@ main {
   }
   main {
     padding-top: 130px;
+    padding-bottom: 0;
+  }
+  .innerLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    margin: 30px auto;
+  }
+  .links a {
+    transform: rotate(-20deg);
+  }
+  p {
+    width: 60%;
+    margin: 0 auto;
   }
 }
