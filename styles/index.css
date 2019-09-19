@@ -4,7 +4,7 @@ body {
 
 .headline > p {
   text-align: center;
-  padding: 0 5%;
+  padding: 5%;
   line-height: 1.5em;
 }
 
@@ -44,7 +44,7 @@ body {
   }
 
   .headline > p {
-    padding: 0 20%;
+    padding: 5% 20%;
   }
 
   .headline {
