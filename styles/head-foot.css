@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-size: 16px;
 }
 
 html {
@@ -42,10 +43,11 @@ footer > a {
 
 i {
   display: inline;
+  margin-right: 5px;
 }
 
 footer > a:hover {
-  color: lightgray;
+  color: gray;
   transition: all 0.25s linear 0s;
 }
 
@@ -154,6 +156,9 @@ div.logoLink {
 }
 
 @media screen and (min-width: 1000px) {
+  * {
+    font-size: 20px;
+  }
   .nav {
     display: flex;
     flex-direction: row;
